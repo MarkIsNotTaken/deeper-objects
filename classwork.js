@@ -39,6 +39,18 @@ var preview = {
 * Return 	isEnabled (string)
 */
 
+function returnEnabled(){
+	var preview1 = preview.enabled;
+	//console.log(preview1);
+	var isEnabled = "";
+	var convert = isEnabled + preview1;
+	//console.log(convert);
+	var type = typeof convert;
+	console.log(type);
+}
+
+returnEnabled();
+
 /*
 * Function that changes the value from the key "enabled" to true, and returns 
 * the value from the key "enabled"
@@ -46,12 +58,35 @@ var preview = {
 * Return 	value from key enabled (boolean)
 */
 
+function returnTrue(){
+	if(preview.enabled == false){
+		preview.enabled = true;
+	}
+	console.log(preview.enabled);
+}
+
+returnTrue();
+
 /*
 * Function that retrieves the urls only from the key "resolutions" 
 * , stores the values in an array called "urls", and returns the created array
 * 
 * Return 	urls (array)
 */
+
+function returnURL(){
+	var url = [];
+	var resolution = preview.images[0].resolutions;
+	//console.log(resolution);
+	//console.log(resolution[0].url);
+	//console.log(resolution[1].url);
+	url.push(resolution[0].url);
+	//console.log(url);
+	url.push(resolution[1].url);
+	console.log(url);
+}
+
+returnURL();
 
 /*
 * Function that retrieves the first nested key and value pairing
@@ -65,3 +100,13 @@ var preview = {
 *
 * Return 	allKeyValuePairs (object)
 */
+
+function returnAllKeyValuePairs(){
+	var allKeyValuePairs = {
+		keys: [],
+		values: []
+	};
+	console.log(preview);
+}
+
+returnAllKeyValuePairs();

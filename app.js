@@ -108,9 +108,11 @@ console.log("\n*** End ***\n");
 */
 function accessObjectInObject(obj){
 	//Print the parameter
-
+	console.log(obj);
 	//Iterate through and print the values in the object
-
+	for(i = 0; i < obj.length; i++){
+		console.log(obj[i]);
+	}
 	//Create a conditional to check if the key is "topping"
 	
 	//Iterate through and print the values in the key "topping"
