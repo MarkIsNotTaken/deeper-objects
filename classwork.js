@@ -44,7 +44,7 @@ function returnEnabled(){
 	//console.log(preview1);
 	var isEnabled = "";
 	var convert = isEnabled + preview1;
-	//console.log(convert);
+	console.log(convert);
 	var type = typeof convert;
 	console.log(type);
 }
