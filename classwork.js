@@ -101,12 +101,22 @@ returnURL();
 * Return 	allKeyValuePairs (object)
 */
 
-function returnAllKeyValuePairs(){
-	var allKeyValuePairs = {
+var allKeyValuePairs = {
 		keys: [],
 		values: []
 	};
-	console.log(preview);
+
+function returnAllKeyValuePairs(obj){
+    //console.log(obj);
+    //console.log(obj.keys);
+    for(var key in obj){
+      obj[key];
+    }
+    //console.log(key);
+    //console.log(obj[key]);
+    allKeyValuePairs.keys.push(key);
+    allKeyValuePairs.values.push(obj[key]);
+    console.log(allKeyValuePairs);
 }
 
-returnAllKeyValuePairs();
+returnAllKeyValuePairs(preview);
