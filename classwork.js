@@ -111,12 +111,14 @@ function returnAllKeyValuePairs(obj){
     //console.log(obj.keys);
     for(var key in obj){
       obj[key];
+      allKeyValuePairs.keys.push(key);
+      allKeyValuePairs.values.push(obj[key]);
     }
     //console.log(key);
     //console.log(obj[key]);
-    allKeyValuePairs.keys.push(key);
-    allKeyValuePairs.values.push(obj[key]);
+    //allKeyValuePairs.keys.push(key);
+    //allKeyValuePairs.values.push(obj[key]);
     console.log(allKeyValuePairs);
 }
 
-returnAllKeyValuePairs(preview);
+returnAllKeyValuePairs(preview.images[0]);
